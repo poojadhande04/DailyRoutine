@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #0b0e14;
+    color: #e1e2eb;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Monospace tabular numbers to prevent jitter */
+  .tabular-nums, .num-stat, .timer-digits {
+    font-feature-settings: "tnum" on, "cv05" on;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Glass and elevation utilities matching Kinetic Obsidian spec */
+.obsidian-card {
+  background-color: #151922;
+  border: 1px solid #232936;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+  border-radius: 1rem;
+}
+
+.obsidian-card-active {
+  background-color: #1d2330;
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08), 0 8px 24px -4px rgba(99, 102, 241, 0.2);
+}
+
+.obsidian-sheet {
+  background: rgba(21, 25, 34, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.85);
+}
+
+.achievement-glow {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.45), 0 0 40px rgba(56, 189, 248, 0.25);
+}
+
+.primary-gradient-cta {
+  background: linear-gradient(135deg, #6366f1 0%, #38bdf8 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 20px -2px rgba(99, 102, 241, 0.45);
+}
+
+.flame-chip {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #f59e0b;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0e14;
+}
+::-webkit-scrollbar-thumb {
+  background: #232936;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #32353c;
+}

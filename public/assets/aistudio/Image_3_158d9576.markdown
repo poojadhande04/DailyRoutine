@@ -1,0 +1,216 @@
+---
+name: Kinetic Obsidian
+colors:
+  surface: '#10131a'
+  surface-dim: '#10131a'
+  surface-bright: '#363940'
+  surface-container-lowest: '#0b0e14'
+  surface-container-low: '#191c22'
+  surface-container: '#1d2026'
+  surface-container-high: '#272a31'
+  surface-container-highest: '#32353c'
+  on-surface: '#e1e2eb'
+  on-surface-variant: '#c7c4d7'
+  inverse-surface: '#e1e2eb'
+  inverse-on-surface: '#2e3037'
+  outline: '#908fa0'
+  outline-variant: '#464554'
+  surface-tint: '#c0c1ff'
+  primary: '#c0c1ff'
+  on-primary: '#1000a9'
+  primary-container: '#8083ff'
+  on-primary-container: '#0d0096'
+  inverse-primary: '#494bd6'
+  secondary: '#7bd0ff'
+  on-secondary: '#00354a'
+  secondary-container: '#00a6e0'
+  on-secondary-container: '#00374d'
+  tertiary: '#ffb95f'
+  on-tertiary: '#472a00'
+  tertiary-container: '#ca8100'
+  on-tertiary-container: '#3e2400'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#e1e0ff'
+  primary-fixed-dim: '#c0c1ff'
+  on-primary-fixed: '#07006c'
+  on-primary-fixed-variant: '#2f2ebe'
+  secondary-fixed: '#c4e7ff'
+  secondary-fixed-dim: '#7bd0ff'
+  on-secondary-fixed: '#001e2c'
+  on-secondary-fixed-variant: '#004c69'
+  tertiary-fixed: '#ffddb8'
+  tertiary-fixed-dim: '#ffb95f'
+  on-tertiary-fixed: '#2a1700'
+  on-tertiary-fixed-variant: '#653e00'
+  background: '#10131a'
+  on-background: '#e1e2eb'
+  surface-variant: '#32353c'
+typography:
+  display-hero:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 40px
+    fontWeight: '800'
+    lineHeight: 48px
+    letterSpacing: -0.03em
+  display-hero-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 32px
+    fontWeight: '800'
+    lineHeight: 40px
+    letterSpacing: -0.025em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 22px
+    fontWeight: '700'
+    lineHeight: 28px
+    letterSpacing: -0.015em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+    letterSpacing: 0em
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+    letterSpacing: 0em
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+    letterSpacing: 0.01em
+  label-caps:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '700'
+    lineHeight: 14px
+    letterSpacing: 0.08em
+  label-stat:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 18px
+    letterSpacing: 0em
+  numeric-stat:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '800'
+    lineHeight: 28px
+    letterSpacing: -0.02em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-mobile: 0.75rem
+  margin: 1.5rem
+  margin-mobile: 1rem
+  space-2xs: 0.25rem
+  space-xs: 0.375rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system crafts an immersive, high-velocity habit tracking ecosystem tailored for ambitious digital natives, biohackers, and high performers. The atmosphere merges disciplined minimalism with electro-luminescent gaming feedback: deep, distraction-free obsidian voids punctuated by surgical neon glows, energetic progress indicators, and tactile micro-rewards.
+
+The aesthetic fuses **Tactile Dark Glassmorphism** with **Futuristic Performance UI**. Interface elements feel like precision instruments—weighted, crystalline, and alive. Micro-interactions utilize crisp luminous gradients rather than flat tones to trigger momentum, transforming daily micro-habits into satisfying dopamine loops.
+
+## Colors
+
+The palette establishes extreme contrast against pitch-black environments to prevent cognitive fatigue while magnifying state changes.
+
+- **Foundations**: Canvas Background sits at deep void `#0B0E14`, resting Cards at `#151922`, elevated overlays and interactive sheets at `#1D2330`, bordered with precision structural strokes at `#232936`.
+- **Primary Kinetic Accent**: Electric Indigo (`#6366F1`) paired with Electric Cyan (`#38BDF8`) for foundational actions, navigation, active trackers, and ambient glow rings.
+- **Energy & Momentum**: Neon Amber (`#F59E0B`) and Hyper Flame (`#FF5722`) reserved exclusively for streak counts, critical timers, gamified level milestones, and heatmaps.
+- **Completion & State**: Vivid Emerald / Neon Mint (`#10B981`) for habit completions, progress fills, and perfect-day affirmations.
+- **Neutrals & Text**: Primary content displays in pure Crisp White (`#F8FAFC`), secondary metadata in Muted Steel (`#94A3B8`), and disabled or passive cues in Dark Slate (`#475569`).
+
+## Typography
+
+Typography prioritizes rapid glanceability, structural clarity, and high data density. **Plus Jakarta Sans** provides geometric rhythm and contemporary authority.
+
+- All quantitative metrics (streaks, countdown timers, completion percentages) must render with `font-feature-settings: "tnum" on, "cv05" on` to enforce monospace tabular alignment and eliminate layout jitter during active countdowns.
+- `label-caps` must be applied in full uppercase for category eyebrows, badge tokens, and progress metadata to maximize scannability.
+- Maintain high contrast: never drop body text opacity below 60% on dark cards to preserve accessibility in low-light environments.
+
+## Layout & Spacing
+
+The system leverages a mobile-first 4-column fluid layout on phones, transitioning to an 8-column container on tablets and compact split-views. 
+
+- **Outer Margins**: Built around a strict `1rem` (16px) margin on mobile, expanding to `1.5rem` (24px) on wider views.
+- **Rhythm**: Driven by an exact 4px/8px modular scale. Habit cards use `space-md` (16px) vertical interior padding with `space-sm` (8px) internal gaps between indicators, check actions, and typography.
+- **Safe Zones**: Base sheets reserve a persistent `5rem` bottom clearance zone for floating navigation tabs and dynamic multi-action buttons.
+
+## Elevation & Depth
+
+Visual hierarchy does not use diffuse gray drop-shadows; it relies on **photonic luminance**, tonal surface stepping, and interior specular strokes.
+
+- **Level 0 (Canvas)**: Solid `#0B0E14`. Zero shadow, flat structural baseline.
+- **Level 1 (Default Cards & Tiles)**: Background `#151922` wrapped in a 1px border of `#232936`. Features a 1px top-edge inner highlight `rgba(255, 255, 255, 0.05)` to simulate chamfered glass.
+- **Level 2 (Active & Interacted Cards)**: Background `#1D2330` with a 1px border tinted by the card’s accent (e.g., `rgba(99, 102, 241, 0.35)`). Underlaid by a soft chromatic radiance: `0 8px 24px -4px rgba(99, 102, 241, 0.18)`.
+- **Level 3 (Modals, Overlays & Sticky Drawers)**: High-density glass surface with `rgba(21, 25, 34, 0.85)` background, `backdrop-filter: blur(20px)`, framed by `rgba(255, 255, 255, 0.12)` borders, cast over `0 24px 48px -12px rgba(0, 0, 0, 0.8)`.
+- **Level 4 (Achievement Glow)**: Dynamic burst elevation for completed routines utilizing dual halos: `0 0 16px rgba(16, 185, 129, 0.4), 0 0 32px rgba(56, 189, 248, 0.2)`.
+
+## Shapes
+
+The interface balances soft ergonomics with sporty precision. Structural interactive items conform to the `rounded-2xl` family (16px / 1rem for standard cards and inputs), providing a modern, tactile feel that fits mobile thumb sweeps.
+
+- **Habit Cards & Dashboard Containers**: 16px radius (`rounded-lg` level token at scale 2).
+- **Gamified Streak Chips & Badges**: Fully pill-shaped (`9999px`) to distinguish categorical metadata from primary card structures.
+- **Completion Rings & Steppers**: Concentric circular architecture with consistent geometric alignment between SVG strokes and container curves.
+
+## Components
+
+### Habit Action Cards
+- **Base**: Grounded on `#151922` with a 1px stroke of `#232936` and 16px corner radius.
+- **Active / Focused**: Border shifts to a linear gradient from `#6366F1` to `#38BDF8` with a subtle inner glow.
+- **Layout**: Leading interactive habit icon/ring, middle metadata (title, target frequency, time anchor), trailing completion toggle or streak chip.
+
+### Buttons
+- **Primary CTA**: Linear gradient fill from `#6366F1` to `#38BDF8`, text in pure `#FFFFFF`, font weight `700`. Elevation produces an ambient cyan-indigo glow (`0 4px 16px rgba(99, 102, 241, 0.3)`).
+- **Secondary Action**: Background `#1D2330`, border `1px solid #232936`, text `#F8FAFC`.
+- **Destructive / Reset**: Transparent fill with `1px solid rgba(255, 87, 34, 0.3)`, text `#FF5722`.
+
+### Gamified Streak Chips
+- Compact pill-shaped badges (`padding: 4px 10px`).
+- Flame theme: Background `rgba(245, 158, 11, 0.12)`, border `1px solid rgba(245, 158, 11, 0.3)`, text `#F59E0B`, displaying an animated flame icon and tabular counter.
+
+### Completion Rings & Checkboxes
+- Replaces traditional checkboxes with custom 32px circular SVG progress rings.
+- Track color: `#232936`.
+- Fill transition: Neon Emerald (`#10B981`) stroke animation with dynamic glow on snap completion.
+- Internal check icon scales with a spring bounce upon reaching 100%.
+
+### Form Inputs & Time Selectors
+- Background `#0E121A`, 1px border `#232936`, 12px corner radius.
+- Active focus displays a 1px outer ring in `#38BDF8` with an inset shadow.
+- Placeholder text in `#475569`; active input text in `#F8FAFC`.
+
+### Progress Rings & Visualizers
+- Multi-habit summary dashboard uses concentric concentric rings (primary ring `#6366F1`, secondary `#38BDF8`, bonus `#10B981`) set against translucent dark glass circular backdrops.
